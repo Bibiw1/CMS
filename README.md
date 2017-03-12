@@ -19,9 +19,9 @@ Run commands in mysql shell:
 <code>
 mysql> CREATE DATABASE cms;
 
-DROP TABLE IF EXISTS articles;
+mysql> DROP TABLE IF EXISTS articles;
 
-CREATE TABLE articles
+mysql> CREATE TABLE articles
 (
   id              smallint unsigned NOT NULL auto_increment,
   publicationDate date NOT NULL,
