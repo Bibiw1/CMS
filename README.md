@@ -16,20 +16,18 @@ You need to rewrite config.php for your admin login/password, mysql login/passwo
 
 Run commands in mysql shell:
 
-<code>
-mysql> CREATE DATABASE cms;
+<code>mysql> CREATE DATABASE cms;</code>
 
-mysql> DROP TABLE IF EXISTS articles;
+<code>mysql> DROP TABLE IF EXISTS articles;</code>
 
-mysql> CREATE TABLE articles
+<code>mysql> CREATE TABLE articles
 (
   id              smallint unsigned NOT NULL auto_increment,
   publicationDate date NOT NULL,
   title           varchar(255) NOT NULL
   summary         text NOT NULL,
   content         mediumtext NOT NULL,
-  
-  PRIMARY KEY     (id)
+ PRIMARY KEY     (id)
 );</code>
 
 Continue, try launch it: http://127.0.0.1/
